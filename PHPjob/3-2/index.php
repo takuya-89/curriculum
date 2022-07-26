@@ -1,20 +1,18 @@
 <?php
 
-$fruits = ["りんご" => "300" , "みかん" => "150", "もも" =>"3000" ];
-$Quantity = ["2","2","2"];
+$fruits = ["りんご" => "150" , "みかん" => "75", "もも" =>"1500" ];
 
 function getPrice($UnitPrice,$Quantity) {
   $FruitsPrice = $UnitPrice * $Quantity;
-  // echo $FruitsPrice , '<br>';
   return $FruitsPrice;
 }
-getPrice(300,2);
 getPrice(150,2);
-getPrice(3000,2);
+getPrice(75,2);
+getPrice(1500,2);
 
 
 foreach($fruits as $value => $UnitPrice ){
-  echo $value ,"は",$UnitPrice, "円です", '<br>' ;
+  echo $value ,"は",getPrice($UnitPrice,2) , "円です", '<br>' ;
 }
 
 ?>
