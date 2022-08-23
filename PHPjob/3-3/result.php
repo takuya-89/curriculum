@@ -10,15 +10,17 @@
     while(true){
 
       $i = mt_rand($min, $max);
+      $m = mt_rand($min, $max);
+      $s = substr($num, $m, 1);
 
-      if( strpos( $num, $i ) === false ){
-      }else{
+      if( $s == $i ){
         echo date("Y/m/d"),"の運勢は<br>"; 
         echo "選ばれた数字は $i <br>"; 
         echo $fortune[$i];
         break;
-      } 
+      }
     }
+    
 ?>
 
 
