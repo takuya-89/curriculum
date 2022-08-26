@@ -1,0 +1,38 @@
+body {
+background-color:gray ;
+margin-top: 15mm;
+}
+
+body > h1{
+  font : 30px  "Arial";
+  color: white;
+  text-align: center;
+  margin-top: 30mm;
+  border-bottom: 3px solid white;
+}
+
+h2{
+  font : 20px  "Arial" bold;
+  color: white;
+  text-align: center;
+}
+
+form{
+  margin-top: 10mm;
+  text-align: center;
+}
+
+p{
+  font : 15px  "Arial";
+  color: white;
+  text-align: center;
+}
+
+div{
+  color: white;
+}
+
+.submit{
+  border: 0em;
+  border-radius: 0.3em;
+}
